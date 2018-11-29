@@ -1,0 +1,472 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*basic reset*/
+/*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
+
+div,p,body,header,footer,section,article,nav 
+{ 
+	margin: 0; 
+	padding: 0; 
+}	
+
+img 
+{ 
+	border: none; /*Remove border if image is a link*/
+	margin: 0; 
+	padding: 0; 
+}
+
+/*html selectors*/
+
+body 
+{
+	background-color: #c8d3d5;
+	font-family: "Marion";
+	font-size: 12px;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 40' width='80' height='40'%3E%3Cpath fill='%23736372' fill-opacity='0.4' d='M0 40a19.96 19.96 0 0 1 5.9-14.11 20.17 20.17 0 0 1 19.44-5.2A20 20 0 0 1 20.2 40H0zM65.32.75A20.02 20.02 0 0 1 40.8 25.26 20.02 20.02 0 0 1 65.32.76zM.07 0h20.1l-.08.07A20.02 20.02 0 0 1 .75 5.25 20.08 20.08 0 0 1 .07 0zm1.94 40h2.53l4.26-4.24v-9.78A17.96 17.96 0 0 0 2 40zm5.38 0h9.8a17.98 17.98 0 0 0 6.67-16.42L7.4 40zm3.43-15.42v9.17l11.62-11.59c-3.97-.5-8.08.3-11.62 2.42zm32.86-.78A18 18 0 0 0 63.85 3.63L43.68 23.8zm7.2-19.17v9.15L62.43 2.22c-3.96-.5-8.05.3-11.57 2.4zm-3.49 2.72c-4.1 4.1-5.81 9.69-5.13 15.03l6.61-6.6V6.02c-.51.41-1 .85-1.48 1.33zM17.18 0H7.42L3.64 3.78A18 18 0 0 0 17.18 0zM2.08 0c-.01.8.04 1.58.14 2.37L4.59 0H2.07z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+
+/*a:link is for not visited(standard unclicked link), 
+a:visited is for visited, and just a applies to both.*/
+/*a will also style anchor links*/
+
+a:link, a:visited 
+{ 
+ 	text-decoration:none; 	
+}
+
+a:hover, a:active 
+{ 
+	text-decoration:none; 
+}
+
+/*hide elements from browser but show for doc outline*/
+
+.hidden
+{
+	display: none;
+}
+
+/*section is block level and no width specidied therefore stretches full screen*/
+#topBar
+{
+	background-color: #000;
+	height: 20px;
+}
+
+/*Site Container*/
+/*This is essentially a box that we place the whole site in.  
+We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 20px (960px) so it fits on 1024x768 screens.*/
+
+#siteContainer 
+{
+	margin: 0 auto;
+	width: 920px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/*This is a flex container*/
+#mainHeader
+{
+	margin-top: 25px;
+	padding-bottom: 25px;
+	width: 920px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+	border-bottom: solid 2px #000;
+}
+
+/*This is a flex item*/
+#logo
+{
+	width: 300px;
+	height: 100px;
+}
+
+/*This is also a flex item*/
+/*We use margin left auto to send it all the way to the right*/
+#mainNav 
+{
+	margin-left: auto;
+	margin-top: 45px;
+	width: 500px;
+	height: 25px;
+}
+
+#mainNav ul
+{
+	list-style-type: none;
+	padding: 0;
+}
+
+#mainNav ul li
+{	
+	font-size: 15px;
+	display: inline;
+	margin-left: 25px;
+}
+
+#mainNav ul li a
+{
+	color: #FFF;
+	background-color: #5c6b72;
+	padding: 10px;
+	border: solid 1px #000;
+}
+
+#mainNav ul li a:hover
+{
+	background-color: #b89eb4
+}
+
+#promo 
+{
+	margin-top: 40px;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+/*Get rid of this, here just to give different height to promo*/
+#promo p 
+{
+	line-height: 250px;
+}
+
+#promoText 
+{
+	width: 600px;
+}
+
+#promoImage 
+{
+	margin-left: auto;
+	width: 280px;
+}
+
+#productInfo 
+{
+	margin-top: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-between;
+	border-bottom: solid 1px #DDD;
+	padding-bottom: 40px;
+}
+
+/*Get rid of this, here just to give different height to productInfo*/
+#productInfo p 
+{
+	line-height: 300px;
+}
+
+.productDesc 
+{
+	width: 200px;
+}
+
+#mainFooter 
+{
+	width: 920px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+}
+
+
+/*footer*/
+#footerNav 
+{
+	margin-left: 20px;
+	margin-top: 25px;
+	width: 300px;
+}
+
+#footerNav ul
+{
+	list-style-type: none;
+	padding: 0;
+	margin-left: 10px;
+}
+
+#footerNav ul li
+{	
+	font-size: 14px;
+	display: inline;
+	justify-content: space-evenly;
+}
+
+#footerNav ul li a
+{
+	color: #FFF;
+	background-color: #5c6b72;
+	padding: 5px;
+	border: solid 1px #000;
+}
+
+#footerNav ul li a:hover
+{
+	background-color: #b89eb4
+}
+
+#footerLogo
+{
+	margin-right: auto;
+	width: 200px;
+	height: 65px;
+}
+
+#copyRight 
+{
+	margin-top: auto;
+	margin-left: auto;
+	font-size: 12px
+	color: #5c6b72;
+	width: 310px;
+}
+
+/*Gallery*/
+
+#galleryContent 
+{
+	width: 920px;
+	height: 700px;
+	margin-top: 40px;
+	border-bottom: solid 2px #000;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	color: #FFF;
+}
+
+#hayden
+{
+	margin-right: auto;
+	width: 440px;
+	height: 632px;
+	position: relative;
+    text-align: center;
+    color: white;
+}
+
+#haydenMain
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	width: 441px;
+	height: 447px;
+}
+
+#haydenGallery
+{
+	width: 440px;
+	height: 150px;
+	margin-right: auto;
+}
+
+#haydenImgs
+{
+	width: 440px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+#simon 
+{
+	margin-left: auto;
+	width: 440px;
+	height: 632px;
+	position: relative;
+    text-align: center;
+    color: #FFF;
+}
+
+
+.overlayText
+{
+	text-decoration: none;
+	display: block;
+	font-size: 24px;
+	color: #FFF;
+	margin-bottom: auto;
+	position: absolute;
+	top: 1%;
+    left: 23%;
+}
+
+
+.overlayText a
+{
+	color: #FFF;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	padding-left: 7px;
+	padding-right: 10px;
+	background-color: #000;
+}
+
+.overlayText a:hover
+{
+	color: #b89eb4;
+}
+
+
+/*Contact us Page*/
+#contact
+{
+	margin-top: 25px;
+	width: 902px;
+	height: 250px;
+	background: url(../images/pic7-Contact.jpg) no-repeat bottom;
+	border: solid 2px #000;	
+}
+
+#contact h2
+{
+	margin-top: 110px;
+	margin-bottom: 120px;
+	text-align: center;
+	font-size: 35px;
+	color: #FFF;
+}
+
+.contactContent
+{
+	margin-top: 25px; 
+	width: 902px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.contactLeft
+{
+	width: 403px;
+	height: 562px;
+	margin-right: auto;
+	background: url(../images/img-contact.jpg) no-repeat;
+}
+
+.contactRight
+{
+	margin-left: auto; 
+	width: 403px;
+	height: 562px;
+	background: url(../images/pic9-abttext.jpg) no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.contactRight p
+{
+	margin-top: 10px;
+	padding: 10px;
+	font-size: 24px;
+	color: #5c6b73;
+	text-align: center;
+	letter-spacing: 1px;
+	line-height: 25px;
+}
+
+#contactForm
+{
+	color: #5c6b73;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+input, textarea
+{
+	display: block;
+	padding: 10px;
+	margin-left: 100px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 200px;
+	border: 1px solid #000;
+	background-color: #efefef;
+}
+
+#submit
+{
+	width: 75px;
+	height: 30px;
+	padding: 5px;
+	background-color: #5c6b73;
+	color: #fff;
+	border: 1px solid #000;
+	margin: auto;
+}
+
+#submit:hover
+{
+	background-color: #b89eb4;
+}
+
+/*about us page*/
+#about
+{
+	margin-top: 25px;
+	width: 902px;
+	height: 250px;
+	background: url(../images/pic8-about.jpg) no-repeat bottom;
+	border: solid 2px #000;	
+}
+
+#about h2
+{
+	margin-top: 110px;
+	margin-bottom: 120px;
+	text-align: center;
+	font-size: 35px;
+	color: #FFF;
+}
+
+/*Content boxes*/
+.aboutContent
+{
+	margin-top: 25px; 
+	width: 902px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.aboutLeft
+{
+	margin-right: auto; 
+	width: 403px;
+	height: 562px;
+	background: url(../images/pic9-abttext.jpg) no-repeat;
+}
+
+.aboutLeft p
+{
+	margin-top: 15px;
+	padding: 10px;
+	font-size: 24px;
+	color: #5c6b73;
+	text-align: center;
+	letter-spacing: 1px;
+	line-height: 25px;
+}
+
+.aboutRight
+{
+	width: 403px;
+	height: 562px;
+	margin-left: auto;
+	background: url(../images/pic10-abtface.jpg) no-repeat;
+}
+
