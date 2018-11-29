@@ -123,6 +123,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	background-color: #b89eb4
 }
 
+
 #promo 
 {
 	margin-top: 40px;
@@ -133,21 +134,25 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
   	justify-content: flex-start;
 }
 
-/*Get rid of this, here just to give different height to promo*/
-#promo p 
-{
-	line-height: 250px;
-}
 
-#promoText 
+
+#promoImage 
 {
 	width: 600px;
 }
 
-#promoImage 
+#promoText 
 {
 	margin-left: auto;
 	width: 280px;
+	line-height: 25px;
+	text-align: center;
+}
+
+#promoText p
+{
+	font-size: 16px;
+	margin-top: 30px;
 }
 
 #productInfo 
@@ -160,15 +165,48 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	padding-bottom: 40px;
 }
 
-/*Get rid of this, here just to give different height to productInfo*/
-#productInfo p 
-{
-	line-height: 300px;
-}
 
-.productDesc 
+
+.siteNav 
 {
 	width: 200px;
+	position: relative;
+	text-align: center;
+}
+
+.textblock
+{
+	width: 200px;
+	color: black;
+}
+
+.textblock a
+{
+	color: #ffe4e1
+
+}	
+
+.textblock a:hover
+{
+	color: #fff;
+}
+
+
+.textblock h3
+{
+	position: absolute;
+	left: 5px;
+    top: 5px;
+    color: white; 
+    background-color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.textblock h3:hover
+{
+	background-color: #b89eb4	 
 }
 
 #mainFooter 
