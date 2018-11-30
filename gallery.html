@@ -6,12 +6,15 @@
 <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
 </head>
 <body>
-	<section id="topBar"></section><!--end topBar-->
+    <h1 class="hidden">UpGrowth Gallery Page</h1>
+  <div id="topBar"></div>
 	<div id="siteContainer">
     	
         <header id="mainHeader">
             <div class="logoHeader">
+                <a href="index.html">
                 <img src="images/logofinal.png" alt= "UpGrowth Logo" width="250" height="75" id="logo">
+                </a>
             </div>
             <nav id="mainNav">
                 <h2 class="hidden">Main Navigation</h2>
@@ -36,9 +39,9 @@
                     
                     <div id="haydenGallery">
                         <div id="haydenImgs">
-                        <img src="images/sigh.gif" alt="artwork titled 'sigh'">
-                        <img src="images/time.jpg" alt="artwork titled 'time'">
-                        <img src="images/weird.jpg" alt="artwork titled 'weird'">
+                            <img src="images/sigh.gif" alt="artwork titled 'sigh'">
+                            <img src="images/time.jpg" alt="artwork titled 'time'">
+                            <img src="images/weird.jpg" alt="artwork titled 'weird'">
                         </div> 
                     </div>  
                         
@@ -50,11 +53,20 @@
             
 
         	<div id="simon">
-                <img src="images/gallery-simon.jpg" alt="photo of artist, simon">
                 
-                <div class="overlayText">
-                    <h2><a href="#">Simon's Work</a></h2>
+                <div id="simonFuller">
+                    <img src="images/gallery-simon.jpg" alt="photo of artist, simon">
                 </div>
+
+                    <div id="simonGallery">
+                        <div id="simonImgs">
+                            <img src="images/simon-art.jpg" alt="Graffiti piece by simon">
+                        </div>
+                    </div>
+
+                        <div class="overlayText">
+                            <h2><a href="#">Simon's Work</a></h2>
+                        </div>
             
             </div><!--end content2-->
 
@@ -64,10 +76,11 @@
          <footer id="mainFooter">
 
             <h2 class="hidden">Footer Navigation</h2>
-            
-            <img src="images/logofinal.png" id=footerLogo alt="UpGrowth Logo">
+
+            <img src="images/logofinal.png" id="footerLogo" alt="UpGrowth Logo">
             
             <nav id="footerNav">
+                <h3 class="hidden">Footer Menu</h3>
                 <ul>
                  <li><a href="index.html">Home</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
