@@ -62,9 +62,9 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 
 #siteContainer 
 {
-	background-color: #c8d3d5;
+	background-image: linear-gradient(#C8D3D5, #B6C0C2);
 	margin: 0 auto;
-	width: 920px;
+	width: 960px;
 	padding-left: 20px;
 	padding-right: 20px;
 }
@@ -72,18 +72,22 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 /*This is a flex container*/
 #mainHeader
 {
-	padding-bottom: 25px;
-	width: 920px;
+	margin-right: auto;
+	padding-bottom: 10px;
+	width: 960px;
 	display: flex;
 	flex-direction: row;
   	justify-content: flex-start;
 	border-bottom: solid 2px #000;
+	background: url(../images/header-bg.gif) no-repeat bottom;
+	border: 1px solid #000;
 }
 
 /*This is a flex item*/
 #logo
 {
 	margin-top: 25px; 
+	margin-left: 30px;
 	width: 300px;
 	height: 100px;
 }
@@ -114,14 +118,14 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 #mainNav ul li a
 {
 	color: #FFF;
-	background-color: #5c6b72;
+	background-image: linear-gradient(#000000, #5B5F62);
 	padding: 10px;
 	border: solid 1px #000;
 }
 
 #mainNav ul li a:hover
 {
-	background-color: #b89eb4
+	background-image: linear-gradient(#b89eb4, #E5DBE3);
 }
 
 
@@ -133,6 +137,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	display: flex;
 	flex-direction: row;
   	justify-content: flex-start;
+  	height: 255px;
 }
 
 
@@ -144,11 +149,14 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	border: 1px solid #000;
 }
 
+
 #promoText 
 {
 	margin-left: auto;
 	margin-right: 10px;
 	width: 280px;
+	background: url(../images/pic6-welcome.jpg) no-repeat bottom;
+	border: solid 1px #000;
 	line-height: 25px;
 	text-align: center;
 }
@@ -156,6 +164,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 #promoText p
 {
 	font-size: 16px;
+	color: #FFF;
 	margin-top: 30px;
 }
 
@@ -165,8 +174,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	display: flex;
 	flex-direction: row;
   	justify-content: space-between;
-	border-bottom: solid 1px #000;
-	padding-bottom: 40px;
+	padding-bottom: 10px;
 }
 
 .centered
@@ -212,16 +220,16 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 
 .textblock h3:hover
 {
-	background-color: #b89eb4	 
+	background-image: linear-gradient(#b89eb4, #E5DBE3); 
 }
 
 
 /*footer*/
 #mainFooter 
 {
-	width: 920px;
-	margin-top: 10px;
-	margin-bottom: 40px;
+	width: 960px;
+	border-top: solid 2px #000;
+	padding-top: 20px;
 	display: flex;
 	flex-direction: row;
   	justify-content: flex-start;
@@ -251,14 +259,14 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 #footerNav ul li a
 {
 	color: #FFF;
-	background-color: #5c6b72;
+	background-image: linear-gradient(#000000, #5B5F62);
 	padding: 5px;
 	border: solid 1px #000;
 }
 
 #footerNav ul li a:hover
 {
-	background-color: #b89eb4
+	background-image: linear-gradient(#b89eb4, #E5DBE3);
 }
 
 #footerLogo
@@ -274,7 +282,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	margin-top: 30px;
 	margin-left: auto;
 	text-align: center;
-	font-size: 12px
+	font-size: 12px;
 	color: #5c6b72;
 	width: 300px;
 }
@@ -286,7 +294,8 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	width: 920px;
 	height: 700px;
 	margin-top: 40px;
-	border-bottom: solid 2px #000;
+	margin-left: auto;
+	margin-right: auto;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
@@ -309,7 +318,6 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	flex-direction: row;
 	justify-content: flex-end;
 	width: 441px;
-	height: 447px;
 }
 
 #haydenGallery
@@ -321,7 +329,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 
 #haydenImgs
 {
-	width: 440px;
+	width: 440px; 
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
@@ -336,7 +344,25 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
     text-align: center;
     color: #FFF;
 }
+#simonFuller
+{
+	width: 441px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
 
+#simonGallery
+{
+	width: 440px;
+	height: 150px;
+	margin-left: auto;
+}
+
+#simonImgs
+{
+	width: 440px;
+}
 
 .overlayText
 {
@@ -371,6 +397,8 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 #contact
 {
 	margin-top: 25px;
+	margin-left: auto;
+	margin-right: auto;
 	width: 902px;
 	height: 250px;
 	background: url(../images/pic7-Contact.jpg) no-repeat bottom;
@@ -389,6 +417,9 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 .contactContent
 {
 	margin-top: 25px; 
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 25px;
 	width: 902px;
 	display: flex;
 	flex-direction: row;
@@ -419,7 +450,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	margin-top: 10px;
 	padding: 10px;
 	font-size: 24px;
-	color: #5c6b73;
+	color: #B6BCC0;
 	text-align: center;
 	letter-spacing: 1px;
 	line-height: 25px;
@@ -427,7 +458,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 
 #contactForm
 {
-	color: #5c6b73;
+	color: #B6BCC0;
 	text-align: center;
 	margin-bottom: 25px;
 }
@@ -464,6 +495,8 @@ input, textarea
 #about
 {
 	margin-top: 25px;
+	margin-left: auto;
+	margin-right: auto;
 	width: 902px;
 	height: 250px;
 	background: url(../images/pic8-about.jpg) no-repeat bottom;
@@ -483,6 +516,9 @@ input, textarea
 .aboutContent
 {
 	margin-top: 25px; 
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 25px;
 	width: 902px;
 	display: flex;
 	flex-direction: row;
@@ -502,7 +538,7 @@ input, textarea
 	margin-top: 15px;
 	padding: 10px;
 	font-size: 24px;
-	color: #5c6b73;
+	color: #B6BCC0;
 	text-align: center;
 	letter-spacing: 1px;
 	line-height: 25px;
